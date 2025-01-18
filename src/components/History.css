@@ -1,0 +1,44 @@
+.history {
+    padding: 20px;
+    background-color: var(--bg);
+    color: var(--primary);
+  }
+  
+  .history h2 {
+    margin-bottom: 20px;
+    color: var(--primary);
+  }
+  
+  .history table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .history th, .history td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--gray);
+  }
+  
+  .history th {
+    background-color: var(--primary);
+    color: var(--white);
+  }
+  
+  .history tr:hover {
+    background-color: var(--hover);
+  }
+  
+  .history .verified {
+    color: var(--primary);
+    font-weight: bold;
+  }
+  
+  .history .rejected {
+    color: #e74c3c;
+    font-weight: bold;
+  }  

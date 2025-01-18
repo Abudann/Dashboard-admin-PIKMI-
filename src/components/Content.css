@@ -1,0 +1,61 @@
+.content {
+    padding: 20px;
+    flex: 1;
+    background-color: var(--bg);
+    color: var(--primary);
+}
+
+.content h2 {
+    margin-bottom: 20px;
+}
+
+.content table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--bg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content th, .content td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.content th {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.content tr:hover {
+    background-color: var(--white);
+}
+
+.content .btn-verify {
+    background-color: var(--secondary);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.content .btn-verify:hover {
+    background-color: var(--accent);
+}
+
+.content .btn-reject {
+    background-color: #e82a19;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content .btn-reject:hover {
+    background-color: #e74c3c;
+}
