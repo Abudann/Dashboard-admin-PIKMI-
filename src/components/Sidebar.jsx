@@ -3,20 +3,25 @@ import { Link } from 'react-router-dom';
 import './Sidebar.css';
 
 
-const Sidebar = () => {
+function Sidebar({ isOpen, toggleSidebar }) {
   return (
-    <div className="sidebar">
-      <div className="sidebar-header">Admin Panel</div>
+    <div className={`sidebar ${isOpen ? 'open' : 'closed'}`}>
+      <div className="sidebar-header">
+        <h3>Admin Panel</h3>
+        <button className="close-btn" onClick={toggleSidebar}>
+          &times; {/* Icon close */}
+        </button>
+      </div>
       <ul className="sidebar-menu">
         <li>
-          <Link to="/" className='sidebar-link'>Dashboard</Link>
+          <Link to="/" onClick={toggleSidebar}>Dashboard</Link>
         </li>
         <li>
-          <Link to="/history" className='sidebar-link'>Riwayat Prestasi</Link>
+          <Link to="/history" onClick={toggleSidebar}>Riwayat Prestasi</Link>
         </li>
-          <li>
-          <Link to="#" className='sidebar-link'>Log out</Link>
-          </li>
+        <li>
+          <Link to="#" onClick={toggleSidebar}>Log out</Link>
+        </li>
       </ul>
     </div>
   );
